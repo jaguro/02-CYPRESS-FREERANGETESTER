@@ -1,0 +1,5 @@
+
+// CONFIGURACION BASICA CYPRESS
+
+    => npm init (crear un proyecto con cypress)
+    => npm install cypress --save-dev (instalacion)
