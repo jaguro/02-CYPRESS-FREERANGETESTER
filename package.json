@@ -4,11 +4,17 @@
   "description": "Pruebas de tester QA Automation para app web con Cypress.IO",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "cy:open": "cypress open",
+    "cy:run:chrome": "cypress run -b chrome",
+    "cy:run:firefox": "cypress run -b firefox",
+    "html:reporter": "cypress run --spec cypress/e2e/navegabilityNavBar_app/test_navBar.cy.js --browser chrome --headed"
   },
   "author": "Jose aguilar QA Enginner Automation",
   "license": "ISC",
   "devDependencies": {
-    "cypress": "^12.15.0"
+    "cypress": "^12.15.0",
+    "cypress-mochawesome-reporter": "^3.5.1",
+    "cypress-plugin-tab": "^1.0.5",
+    "mochawesome": "^7.1.3"
   }
 }
